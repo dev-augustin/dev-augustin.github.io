@@ -1,24 +1,89 @@
+// 
+
 import React from 'react';
-import {Navbar, Nav} from 'react-bootstrap'
+ import 'bootstrap/dist/css/bootstrap.min.css'
+import {Navbar, Nav, NavDropdown, NavLink } from 'react-bootstrap'
+import {Link, BrowserRouter as Router} from 'react-router-dom'
+import '../styles/Navigation.css'
+import MyCart from './MyCart'
 
 export default function Navigation() {
     return (
-        <div>
-            <Navbar>
-                <Navbar.Brand href="/Home">
-                    <h1>Gift Store</h1>
+
+        <Router>
+
+        <div className="route-container">
+           
+            <Navbar className="nav-color" bg="dark" expand="lg" variant="dark">
+                
+                <Navbar.Brand as={Link} to='/Home'>
+                    <h1 id="store-name">Gift Store</h1>
                 </Navbar.Brand>
-                <Nav classNMe="route-navBar">
+                {/* <Nav className="route-navBar">
                     <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/flowers">Flowers</Nav.Link>
+                    <Nav.Link href="/handmade">Handmade Gifts</Nav.Link>
+                    <Nav.Link href="/partySupplies">Party Supplies</Nav.Link> 
+                    
+                    <Nav.Link href="/myCart">My Cart</Nav.Link>
+                    <Nav.Link href="/myProfile">My Profile</Nav.Link>
+                    <Nav.Link href="/review">Leave a Review</Nav.Link>
+                    <Nav.Link href="/contact">Contact</Nav.Link>
+                    </Nav>
+
+                    </Navbar> */}
+                                       {/* <Nav.Link to="/myCart">My Cart</Nav.Link>
+                    <Nav.Link as= {NavLink} to='/myProfile'>My Profile</Nav.Link>
+                    <Nav.Link as= {Link} to='/review'>Leave a Review</Nav.Link>
+                <Nav.Link as= {Link} to='/contact'>Contact</Nav.Link> 
+                
+                </Nav>
+
+
+            </Navbar>    */}
+                
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="route-navBar">
+                    <Nav.Link href="/">Home</Nav.Link> 
+
+                    
+                 <NavDropdown title="Products" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/handmade/3.1">Handmade Gifts</NavDropdown.Item>
+                        <NavDropdown.Item href="/flowers/3.2">Flowers</NavDropdown.Item> 
+                         <NavDropdown.Item href="/partySupplies/3.3">Party Supplies</NavDropdown.Item>
+                    </NavDropdown>     
+                    {/* <Nav.Link href="/flowers">Flowers</Nav.Link>
+                    <Nav.Link href="handmade">Handmade Gifts</Nav.Link>
+                    <Nav.Link href="/partySupplies">Party Supplies</Nav.Link> */}
+                    
+                    <Nav.Link href="/myCart">My Cart</Nav.Link>
+                    <Nav.Link href="/myProfile">My Profile</Nav.Link>
+                    <Nav.Link href="/review">Leave a Review</Nav.Link>
+                    <Nav.Link href="/contact">Contact</Nav.Link>
+                                       {/* <Nav.Link to="/myCart">My Cart</Nav.Link>
+                    <Nav.Link as= {NavLink} to='/myProfile'>My Profile</Nav.Link>
+                    <Nav.Link as= {Link} to='/review'>Leave a Review</Nav.Link>
+                <Nav.Link as= {Link} to='/contact'>Contact</Nav.Link> */}
+{/* 
+                    </Nav> 
+
+
+                 <Nav className="route-navBar">
+                    <Nav.Link href="/">Home</Nav.Link>
+                    <Link to="/myCart">My Cart</Link>
                     <Nav.Link href="/flowers">Flowers</Nav.Link>
                     <Nav.Link href="handmade">Handmade Gifts</Nav.Link>
                     <Nav.Link href="/partySupplies">Party Supplies</Nav.Link>
                     <Nav.Link href="/myCart">My Cart</Nav.Link>
-                    <Nav.Link href="/myProfile">My Profile</Nav.Link>
-                    <Nav.Link href="/review">Leave a Review</Nav.Link>
-                    <Nav.Link href="/">Contact</Nav.Link>
-                </Nav>
-            </Navbar>
-        </div>
+                </Nav> */}
+
+                  </Nav> 
+                  </Navbar.Collapse>
+            
+            </Navbar> 
+     
+        </div> 
+     </Router>
     )
 }
