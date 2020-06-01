@@ -2,7 +2,7 @@
 
 import React from 'react';
  import 'bootstrap/dist/css/bootstrap.min.css'
-import {Navbar, Nav, NavDropdown, NavLink } from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown, NavLink , Container} from 'react-bootstrap'
 import {Link, BrowserRouter as Router} from 'react-router-dom'
 import '../styles/Navigation.css'
 import MyCart from './MyCart'
@@ -44,11 +44,12 @@ export default function Navigation() {
                 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="route-navBar">
+                <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link> 
 
                     
                  <NavDropdown title="Products" id="basic-nav-dropdown">
+                      
                         <NavDropdown.Item href="/handmade/3.1">Handmade Gifts</NavDropdown.Item>
                         <NavDropdown.Item href="/flowers/3.2">Flowers</NavDropdown.Item> 
                          <NavDropdown.Item href="/partySupplies/3.3">Party Supplies</NavDropdown.Item>
@@ -61,6 +62,11 @@ export default function Navigation() {
                     <Nav.Link href="/myProfile">My Profile</Nav.Link>
                     <Nav.Link href="/review">Leave a Review</Nav.Link>
                     <Nav.Link href="/contact">Contact</Nav.Link>
+
+                    <Navbar.Text className="contact-text">
+      Contact: <a href="#login">123-456-0987</a><br/>
+      Address:133, wfdsfcds, tx
+    </Navbar.Text>
                                        {/* <Nav.Link to="/myCart">My Cart</Nav.Link>
                     <Nav.Link as= {NavLink} to='/myProfile'>My Profile</Nav.Link>
                     <Nav.Link as= {Link} to='/review'>Leave a Review</Nav.Link>
@@ -82,8 +88,11 @@ export default function Navigation() {
                   </Navbar.Collapse>
             
             </Navbar> 
+            
      
         </div> 
+        {/* <Footer /> */}
      </Router>
+
     )
 }
