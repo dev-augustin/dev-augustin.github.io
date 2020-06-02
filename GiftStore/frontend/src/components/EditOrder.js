@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-// import { Button, Form, FormGroup, Input, Lable, Container, Table } from 'reactstrap';
-// import { Link } from 'react-router-dom';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
 import '../styles/_EditOrder.scss'
@@ -45,27 +43,7 @@ export default class EditOrder extends Component {
         }
     }
 
-//   loadUser() {
-//     ApiService.fetchUserById(window.localStorage.getItem("userId"))
-//         .then((res) => {
-//             let user = res.data.result;
-//             this.setState({
-//             id: user.id,
-//             username: user.username,
-//             firstName: user.firstName,
-//             lastName: user.lastName,
-//             age: user.age,
-//             salary: user.salary,
-//             })
-//         });
-// }
-//   onChange = (event) =>{
-//     event.preventDefault();
-//     console.log("Onchange", event.target.value)
-//     this.setState({
-//       [event.target.name]:event.target.value
-//     });
-// }
+
 handleChange = (event) =>{
     console.log("inside handleChange")
     console.log(event.target.name, event.target.value)
@@ -96,7 +74,6 @@ putAPI = async (formData) =>{
            
             );
             console.log(response.data);
-            // this.setState({reserve: response.data, isLoading: false})
             this.props.history.push('/myCart');
         }
 
@@ -104,7 +81,6 @@ putAPI = async (formData) =>{
             console.log("Error", e)
         }
 
-        // this.props.history.push('/manageReservation/');
     }
 
     onContinue=(event) =>{
@@ -131,7 +107,6 @@ putAPI = async (formData) =>{
                
                 );
                 console.log(response.data);
-                // this.setState({reserve: response.data, isLoading: false})
                 this.props.history.push('/flowers/3.2');
             }
     
@@ -139,11 +114,9 @@ putAPI = async (formData) =>{
                 console.log("Error", e)
             }
     
-            // this.props.history.push('/manageReservation/');
         }
    render(){
-    // const {reserve} = this.state;
-    console.log(this.state.id)
+ 
        return(
         <React.Fragment>
         <form>
@@ -163,9 +136,6 @@ putAPI = async (formData) =>{
                 <Link to='/flowers/3.2'>
                 <button onClick={(e)=> {this.onContinue(e, this.state.title, this.state.price, this.state.productImage, this.state.productId)}} id="continue-button">Continue Shopping</button></Link>
             </div>
-
-                {/* <button onClick={(e)=> {this.onSubmit(e, item.productImage, item.title, item.price, item.productId)}}>Add</button> */}
-                {/* // <Link to='/myCart'><button>View Cart</button></Link> */}
         </div>
         </form>
       </React.Fragment>

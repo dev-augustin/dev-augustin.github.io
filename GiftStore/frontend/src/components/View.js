@@ -23,7 +23,6 @@ export default class View extends Component {
 
     onSubmit = (event,image, title, price, productId)=>{
         event.preventDefault();
-        // console.log(event.target.value)
         console.log(price, productId, title, image)
         console.log(this.state.quantity*title);
         let y= (this.state.quantity*title).toFixed(2);
@@ -37,7 +36,7 @@ export default class View extends Component {
             title : image,
             productId : productId,
             total : y
-            // quantity : event.target.value
+
         }
         console.log(formData)
       
@@ -46,11 +45,7 @@ export default class View extends Component {
 onContinue = (event,image, title, price, productId)=>{
     alert("Item added to cart. Continue shopping");
     event.preventDefault();
-    // console.log(event.target.value)
-    console.log(price, productId, title, image)
-    console.log(this.state.quantity*title);
     let y= (this.state.quantity*title).toFixed(2);
-    console.log(y)
     this.setState({total: y});
     let formData = {
         quantity: this.state.quantity,
@@ -60,7 +55,6 @@ onContinue = (event,image, title, price, productId)=>{
         title : image,
         productId : productId,
         total : y
-        // quantity : event.target.value
     }
     console.log(formData)
   
@@ -75,17 +69,6 @@ postContinueAPI = async (formData) =>{
             );
             console.log(response.data)
             this.props.history.push('/');
-            // this.props.history.push({
-            //     pathname :'/view/', 
-            //     state:{
-            //         title : response.data.title,
-            //         price : response.data.price,
-            //         productImage : response.data.productImage
-            //     }
-            
-            
-            // });    
-            // this.setState({reserve: response.data, isLoading: false}) */}
         }
 
     catch(e){
@@ -102,17 +85,6 @@ postAPI = async (formData) =>{
             );
             console.log(response.data)
             this.props.history.push('/myCart');
-            // this.props.history.push({
-            //     pathname :'/view/', 
-            //     state:{
-            //         title : response.data.title,
-            //         price : response.data.price,
-            //         productImage : response.data.productImage
-            //     }
-            
-            
-            // });    
-            // this.setState({reserve: response.data, isLoading: false}) */}
         }
 
     catch(e){
@@ -139,9 +111,6 @@ postAPI = async (formData) =>{
  
 
                 </div>
-
-   
-                 {/* <Link to='/myCart'><button>View Cart</button></Link> */}
             
              <div className="button-items">
                 <br/>

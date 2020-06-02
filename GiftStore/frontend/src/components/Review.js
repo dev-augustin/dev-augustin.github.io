@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button, ButtonGroup, Container, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,19 +17,6 @@ export default class Reviews extends Component {
         }
       
     }
-
-    // async componentDidMount() {
- 
-    //     try{
-    //             const response = await axios.get("/rosy_api/v1/reviews");
-    //             console.log(response.data);
-    //             this.setState({reserve: response.data, isLoading: false})
-    //         }
-    
-    //     catch(e){
-    //             console.log("Error", e)
-    //         }
-    //     }
  onChange = (event) =>{
     event.preventDefault();
     console.log("Onchange", event.target.value)
@@ -58,8 +44,6 @@ postAPI = async (formData) =>{
            
             );
             console.log(response.data);
-            // this.props.history.push('/reviews/');
-            // this.setState({reserve: response.data, isLoading: false})
         }
 
     catch(e){
@@ -67,7 +51,7 @@ postAPI = async (formData) =>{
         }
     }
    render(){
-    // const {reserve} = this.state;
+
        return(
         <React.Fragment>
                <div className="form-div-review">

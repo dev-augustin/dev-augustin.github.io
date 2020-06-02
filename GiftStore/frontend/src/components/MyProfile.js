@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-import { Button, ButtonGroup, Container, Table } from 'react-bootstrap';
+import {Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/_MyProfile.scss'
 
@@ -164,13 +164,8 @@ export default class MyProfile extends Component {
 
                     <p style={{fontFamily: 'cursive'}}>(You have 24hrs to cancel after confirming your Order)</p>
 
-                    {/* <Link to="/manageReservation"> Go to Manage you Reservation</Link>  */}
-            
-           
                 </div>
-
-
-                
+            
             </div>
             </React.Fragment>
 )
