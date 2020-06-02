@@ -16,6 +16,7 @@ import View from  './components/View'
 import PartySupplies from  './components/PartySupplies'
 import EditOrder from './components/EditOrder'
 import Confirmation from  './components/Confirmation'
+import ThankYou from  './components/ThankYou'
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             <Route exact path = '/view' component={View}></Route>
             <Route exact path = '/editorder/:id' component={EditOrder}></Route>
             <Route exact path = '/confirmation' component={Confirmation}></Route>
-            
+            <Route exact path = '/thankyou' component={ThankYou}></Route>
             <Route exact path = '/partySupplies/3.3' component={PartySupplies}></Route>
          </Switch>
 
