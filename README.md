@@ -1,7 +1,7 @@
 ### Deployed Link
 
 ### Wireframe
-
+![wireframe](..../frontend/wireframe/GiftStore_Wireframe.png)
 
 ### Installations needed
 
