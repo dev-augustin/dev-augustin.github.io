@@ -41,7 +41,6 @@ export default class Reviews extends Component {
 
 
 onSubmit=(event) =>{
-    alert("Thank You. Your email will be responded within two working days")
     console.log(this.state.Review)
     event.preventDefault();
     let formData = {
@@ -59,7 +58,7 @@ postAPI = async (formData) =>{
            
             );
             console.log(response.data);
-            // this.props.history.push('/reviews/');
+            this.props.history.push('/thankyou');
             // this.setState({reserve: response.data, isLoading: false})
         }
 
