@@ -58,7 +58,7 @@ postAPI = async (formData) =>{
            
             );
             console.log(response.data);
-            this.props.history.push('/thankyou');
+            // this.props.history.push('/reviews/');
             // this.setState({reserve: response.data, isLoading: false})
         }
 
@@ -89,7 +89,7 @@ postAPI = async (formData) =>{
                     <br/><br/>
                     
                    
-                        <input type="submit" value="Submit" id="submit-button"/>
+                    <Link to='/thankyou'>  <input type="submit" value="Submit" id="submit-button"/> </Link>
                     
                     </form>
                    </div>

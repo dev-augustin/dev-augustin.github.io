@@ -113,49 +113,50 @@ export default class MyProfile extends Component {
             <h5 className="customer-header">Customer Infortmation</h5>
                 <form onSubmit={this.onSubmit} >
 
-                   <label style={{ marginTop: '40px'}} >
+                   <label class="form-label" style={{ marginTop: '40px'}} >
                        Full Name:  </label> 
-                       <input type="text" name="fullName" value={this.state.fullName} onChange={this.onChange} placeholder="Enter first & last name" ></input>            
+                       <input style={{marginRight:"30px"}} className="form-input" type="text" name="fullName" value={this.state.fullName} onChange={this.onChange} placeholder="Enter first & last name" ></input>            
                     <br/>
-                    <label>
-                        Email:   <input type="text" name="email" value={this.state.email} onChange={this.onChange} placeholder="valid email"  />  </label>
+                    <label class="form-label" > 
+                        Email:   </label>
+                        <input  className="form-input" type="text" name="email" value={this.state.email} onChange={this.onChange} placeholder="valid email"  />  
                                
                     <br/>
-                    <label>
+                    <label class="form-label" >
                         Phone:  </label>
-                        <input type="text" name="phone" value={this.state.phone} onChange={this.onChange} placeholder="(000-000-0000)" />
+                        <input className="form-input" type="text" name="phone" value={this.state.phone} onChange={this.onChange} placeholder="(000-000-0000)" />
                     <br/>
                    
-                    <label>
+                    <label class="form-label" >
                         Address:  </label>
-                        <input id="text-area" type="text" name="address" value={this.state.address} onChange={this.onChange} placeholder="questions/concerns" />
+                        <input style={{marginRight:"10px" ,height:'60px'}} className="form-input" id="text-area" type="text" name="address" value={this.state.address} onChange={this.onChange} placeholder="address" />
                     <br/>
                     <hr/>
                 <div>
                 <h5 className="payment-header
                 "> Payment Infortmation</h5>
                 <br/>
-                    <label>
+                    <label class="form-label" >
                         Name on Card:  </label>
-                        <input type="text" name="Phone" value={this.state.cardName} onChange={this.onChange} placeholder="(000-000-0000)" />
+                        <input style={{marginRight:"30px"}} className="form-input" type="text" name="Phone" value={this.state.cardName} onChange={this.onChange} placeholder="(name on card)" />
                         <br/>
-                    <label>
+                    <label class="form-label" >
                        Credit Card Number:  </label>
-                       <input type="text" name="LastName" value={this.state.cardNumber} onChange={this.onChange} placeholder="Enter your last name" ></input>            
+                       <input style={{marginRight:"67px"}} className="form-input"  type="text" name="LastName" value={this.state.cardNumber} onChange={this.onChange} placeholder="card number" ></input>            
                     <br/>
-                    <label>
+                    <label class="form-label" >
                         CVV:  </label>
-                        <input type="text" name="Email" value={this.state.cvv} onChange={this.onChange} placeholder="valid email"  />          
+                        <input style={{marginLeft: "30px"}}className="form-input"  type="text" name="Email" value={this.state.cvv} onChange={this.onChange} placeholder="cvv"  />          
                     <br/>
-                    <label>
+                    <label class="form-label" >
                         Expiry Date:  </label>
-                        <input type="text" name="Phone" value={this.state.label} onChange={this.onChange} placeholder="(000-000-0000)" />
+                        <input style={{marginRight:"20px"}} className="form-input" type="text" name="Phone" value={this.state.label} onChange={this.onChange} placeholder="(mm/dd/yy)" />
                     <br/>
                 </div>
 
                 <div>
                    <label id="reserve-submit">
-                    <Link to='/confirmation'>  <input type="submit" style={{marginTop: '10px', marginRight:'80px', textAlign:'center'}} value="Submit Order" onClick={this.onSubmitProfile}/> </Link>
+                    <Link to='/confirmation'>  <input type="submit" style={{marginTop: '10px', paddingLeft: "20px",marginRight:'80px', textAlign:'center'}} value="Submit Order" onClick={this.onSubmitProfile}/> </Link>
                     </label> 
                     <Link to='/myCart'><input type="submit" value="View Cart" /></Link>
                 </div> 
