@@ -74,7 +74,7 @@ postContinueAPI = async (formData) =>{
            
             );
             console.log(response.data)
-            this.props.history.push('/flowers/3.2');
+            this.props.history.push('/');
             // this.props.history.push({
             //     pathname :'/view/', 
             //     state:{
@@ -145,8 +145,8 @@ postAPI = async (formData) =>{
             
              <div className="button-items">
                 <br/>
-                <button id="checkOut-button" onClick={(e)=> {this.onSubmit(e, this.props.location.state.title, this.props.location.state.price, this.props.location.state.productImage, this.props.location.state.productId)}}>Add Item to Cart & Checkout</button> 
-                <Link to='/flowers/3.2'><button  onClick={(e)=> {this.onContinue(e, this.props.location.state.title, this.props.location.state.price, this.props.location.state.productImage, this.props.location.state.productId)}}id="continue-button" >Continue Shopping</button></Link> 
+                <button id="checkOut-button" onClick={(e)=> {this.onSubmit(e, this.props.location.state.title, this.props.location.state.price, this.props.location.state.productImage, this.props.location.state.productId)}}>Add & View Item in Cart</button> 
+                <Link to='/flowers/3.2'><button onClick={(e)=> {this.onContinue(e, this.props.location.state.title, this.props.location.state.price, this.props.location.state.productImage, this.props.location.state.productId)}} id="continue-button" >Continue Shopping</button></Link> 
             </div>
             </div>
               </form>

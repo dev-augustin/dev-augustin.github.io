@@ -1,0 +1,16 @@
+
+// @import "~bootstrap/scss/bootstrap";
+// @import "_Home";
+
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+$buttonText: red;
+$buttonBackground: blue;
+
+.button{
+    color: $buttonText;
+    background-color: $buttonBackground;
+}

@@ -60,46 +60,38 @@ export default class Hoe extends Component {
 // }
 return (
     <React.Fragment>
-        <div style={{ margin: "90px" , 'display' : 'flex', justifyContent: "center", }}>
+        <div className="home-container">
 
-        <Carousel className="carousel-container" class="carousel slide" data-ride="carousel" style={{'height':"580px", 'width' : "80%" , 
-                    }} >
-       
-       <Carousel.Item className="carousel-item">
-                <img style={{'height':"500px" , 'width': "100%", marginTop: "2%" , marginLeft:'140px'}} 
+        <div>
+
+        <img style={{'height':"400px" , 'width': "250px"}}  src={flowers} alt="slide"  />
+                        
+                       
+                        <Link to='/flowers/3.2' className="link"> <p>flowers for special occasion</p></Link>
+      </div>
+      <div>
+          <img style={{'height':"400px" , 'width': "250px"}} 
                 
                 src={table} 
                 alt="slide"  
                 />  
-                  </Carousel.Item> 
-       <Carousel.Item className="carousel-item">
-                <img style={{'height':"500px" , 'width': "100%", marginTop: "2%" , marginLeft:'140px'}} 
-                
-                src={flowers} 
-                alt="slide"  
-                />  
-                  </Carousel.Item> 
-                  <Carousel.Item className="carousel-item">
-                <img style={{'height':"500px" , 'width': "100%", marginTop: "2%" , marginLeft:'140px'}} 
-                
-                src={table} 
-                alt="slide"  
-                />  
-                  </Carousel.Item> 
-    
-                <Carousel.Item className="carousel-item">
-                <img style={{'height':"500px" , 'width': "100%", marginTop: "2%" , marginLeft:'140px'}} 
+                      
+                <Link to='/partySupplies/3.3'className="link"><p className="captions">party Supplies</p></Link>
+                </div>
+      <div>
+          <img style={{'height':"400px" , 'width': "250px"}} 
                 
                 src={biscuits} 
                 alt="slide"  
                 />  
-                  </Carousel.Item> 
-                    {/* <Carousel.Caption className="carousel-caption">
-    
-                  <p >{result.amenities} | &nbsp; {result.roomType} | &nbsp; {result.price} <span>usd/night</span> </p>
-     </Carousel.Caption> */}
+                  <Link to='/giftBasket/3.1' className="link"><p>amazon special gift baskets</p></Link>
+      
+      </div>
           
-        </Carousel>
+    
+              
+             
+
         </div>
      
     </React.Fragment>
