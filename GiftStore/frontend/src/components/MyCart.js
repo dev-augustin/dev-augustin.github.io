@@ -123,7 +123,7 @@ deleteAPI = async (id) =>{
                                     <img src={item.productImage} alt="flowers" height="175px" width="150px"/>
                                 </td>
                                 <td>
-                                   {item.title.substring(0,30)}
+                                   {item.title}
                                 </td>
                                 <td>
                                    {item.quantity} 
