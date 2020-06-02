@@ -1,0 +1,40 @@
+.form-div-review{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: cursive;
+    color:gray;
+    // margin:100px;
+    // justify-content: center; 
+    display: flex;
+    flex-direction: column;
+}
+
+#submit-button{
+   text-align: center;
+   align-content: center;
+   margin-left: 210px;
+   position: fixed;
+}
+
+#review-heading{
+    text-align: center;
+    margin-top: 0px;;
+    margin-bottom:10px;
+
+}
+.label-review{
+    margin-right: 10px;
+}
+
+.input-review{
+    margin-left:10px;
+}
+
+.input-review-email{
+    margin-left:110px;
+}
+// .review-container{
+//     background-color: beige;
+//     margin-top: 1px;
+//     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+//     font-style: cursive;
+// }
