@@ -3,12 +3,17 @@
 ### Wireframe
 ![wireframe](./GiftStore/frontend/wireframe/GiftStore_Wireframe.png)
 
+### Technology Used:
+FrontEnd Framework - ReactJS
+Backend - Postgres as a SQL database, Spring Boot w/Maven as a build tool
+
 ### Installations needed
 
 npm install axios, sass, react-bootstrap, react-router-dom
 
 ### API used:
-https://rainforestapi.com/
+1. https://rainforestapi.com/ - 3rd party API
+
 
 ## Problem Statement:
 The stakeholders currently have only one physical retail store, limiting the potential to reach more clients.
