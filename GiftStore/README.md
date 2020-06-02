@@ -5,7 +5,7 @@
 https://spring-react-gift-store.herokuapp.com/
 
 ### Wireframe
-![wireframe](./GiftStore/frontend/wireframe/GiftStore_Wireframe.png)
+![wireframe](./wireframe/GiftStore_Wireframe.png)
 
 ### Technology Used:
 FrontEnd Framework - ReactJS
