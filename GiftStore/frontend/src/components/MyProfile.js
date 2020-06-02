@@ -94,7 +94,7 @@ export default class MyProfile extends Component {
                                         <img src={item.productImage} alt="flowers" height="150px" width="150px"/>
                                     </td>
                                     <td>
-                                    {item.title.substring(0,30)}
+                                    {item.title}
                                     </td>
                                     <td>
                                     {item.quantity} 
