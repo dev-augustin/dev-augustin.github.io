@@ -28,17 +28,7 @@ export default class MyProfile extends Component {
  
         try{
                 const response = await axios.get("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders");
-                // console.log(response.data[0].total);
-                // console.log(response.data);
-                // let temp=0;
-                // let finalPrice=[];
-                // for(let i=0; i<response.data.length;i++){
-                // {temp[i]= response.data[i].total;}
-                // finalPrice.push(temp)
 
-                // }
-                // console.log(finalPrice)
-                // this.setState({finaltotal: finalPrice});
                 this.setState({reserve: response.data});
                             let temp=[];
                 let finalPrice=[];

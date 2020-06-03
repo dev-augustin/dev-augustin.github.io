@@ -1,9 +1,11 @@
-<<<<<<< HEAD
+### Gift Store
+
+
 ### Deployed Link
 https://spring-react-gift-store.herokuapp.com/
 
 ### Wireframe
-![wireframe](./GiftStore/frontend/wireframe/GiftStore_Wireframe.png)
+![wireframe](https://github.com/dev-augustin/dev-augustin.github.io/blob/master/GiftStore/frontend/wireframe/GiftStore_Wireframe.png)
 
 ### Technology Used:
 FrontEnd Framework - ReactJS
@@ -29,6 +31,3 @@ Customers who prefer online shopping.
 
 ## Next Steps:
 Create checkout and total payment and validations, authentication functionality.
-=======
-### GiftStore - Online e-commerce portal
->>>>>>> e0028f98fac88316f0986501e1a1c2b03bf15548
