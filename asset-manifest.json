@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/GiftStore/frontend/static/css/main.048a49c6.chunk.css",
-    "main.js": "/GiftStore/frontend/static/js/main.394cd9fa.chunk.js",
-    "main.js.map": "/GiftStore/frontend/static/js/main.394cd9fa.chunk.js.map",
-    "runtime-main.js": "/GiftStore/frontend/static/js/runtime-main.56a02b3f.js",
-    "runtime-main.js.map": "/GiftStore/frontend/static/js/runtime-main.56a02b3f.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/GiftStore/frontend/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.322af626.chunk.js": "/GiftStore/frontend/static/js/2.322af626.chunk.js",
-    "static/js/2.322af626.chunk.js.map": "/GiftStore/frontend/static/js/2.322af626.chunk.js.map",
-    "index.html": "/GiftStore/frontend/index.html",
-    "precache-manifest.f749f953b2a52d7f45928cf6dabbe32f.js": "/GiftStore/frontend/precache-manifest.f749f953b2a52d7f45928cf6dabbe32f.js",
-    "service-worker.js": "/GiftStore/frontend/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/GiftStore/frontend/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.048a49c6.chunk.css.map": "/GiftStore/frontend/static/css/main.048a49c6.chunk.css.map",
-    "static/js/2.322af626.chunk.js.LICENSE.txt": "/GiftStore/frontend/static/js/2.322af626.chunk.js.LICENSE.txt",
-    "static/media/birthday-table.jpeg": "/GiftStore/frontend/static/media/birthday-table.52d5edd1.jpeg",
-    "static/media/biscuits.jpeg": "/GiftStore/frontend/static/media/biscuits.d4b56f62.jpeg",
-    "static/media/flowers.jpeg": "/GiftStore/frontend/static/media/flowers.d8b99629.jpeg"
+    "main.css": "/dev-augustin.github.io/static/css/main.048a49c6.chunk.css",
+    "main.js": "/dev-augustin.github.io/static/js/main.70b94d5d.chunk.js",
+    "main.js.map": "/dev-augustin.github.io/static/js/main.70b94d5d.chunk.js.map",
+    "runtime-main.js": "/dev-augustin.github.io/static/js/runtime-main.be7ec8c2.js",
+    "runtime-main.js.map": "/dev-augustin.github.io/static/js/runtime-main.be7ec8c2.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/dev-augustin.github.io/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.322af626.chunk.js": "/dev-augustin.github.io/static/js/2.322af626.chunk.js",
+    "static/js/2.322af626.chunk.js.map": "/dev-augustin.github.io/static/js/2.322af626.chunk.js.map",
+    "index.html": "/dev-augustin.github.io/index.html",
+    "precache-manifest.ff6b6f4ffe2ad13be189de08d3b73e0d.js": "/dev-augustin.github.io/precache-manifest.ff6b6f4ffe2ad13be189de08d3b73e0d.js",
+    "service-worker.js": "/dev-augustin.github.io/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/dev-augustin.github.io/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.048a49c6.chunk.css.map": "/dev-augustin.github.io/static/css/main.048a49c6.chunk.css.map",
+    "static/js/2.322af626.chunk.js.LICENSE.txt": "/dev-augustin.github.io/static/js/2.322af626.chunk.js.LICENSE.txt",
+    "static/media/birthday-table.jpeg": "/dev-augustin.github.io/static/media/birthday-table.52d5edd1.jpeg",
+    "static/media/biscuits.jpeg": "/dev-augustin.github.io/static/media/biscuits.d4b56f62.jpeg",
+    "static/media/flowers.jpeg": "/dev-augustin.github.io/static/media/flowers.d8b99629.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.56a02b3f.js",
+    "static/js/runtime-main.be7ec8c2.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.322af626.chunk.js",
     "static/css/main.048a49c6.chunk.css",
-    "static/js/main.394cd9fa.chunk.js"
+    "static/js/main.70b94d5d.chunk.js"
   ]
 }
