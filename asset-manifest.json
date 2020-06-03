@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/GiftStore/static/css/main.048a49c6.chunk.css",
+    "main.js": "/GiftStore/static/js/main.e43defcc.chunk.js",
+    "main.js.map": "/GiftStore/static/js/main.e43defcc.chunk.js.map",
+    "runtime-main.js": "/GiftStore/static/js/runtime-main.853b09f8.js",
+    "runtime-main.js.map": "/GiftStore/static/js/runtime-main.853b09f8.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/GiftStore/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.322af626.chunk.js": "/GiftStore/static/js/2.322af626.chunk.js",
+    "static/js/2.322af626.chunk.js.map": "/GiftStore/static/js/2.322af626.chunk.js.map",
+    "index.html": "/GiftStore/index.html",
+    "precache-manifest.f72dc0548d3d2f30ac3ee5212c5314c5.js": "/GiftStore/precache-manifest.f72dc0548d3d2f30ac3ee5212c5314c5.js",
+    "service-worker.js": "/GiftStore/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/GiftStore/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.048a49c6.chunk.css.map": "/GiftStore/static/css/main.048a49c6.chunk.css.map",
+    "static/js/2.322af626.chunk.js.LICENSE.txt": "/GiftStore/static/js/2.322af626.chunk.js.LICENSE.txt",
+    "static/media/birthday-table.jpeg": "/GiftStore/static/media/birthday-table.52d5edd1.jpeg",
+    "static/media/biscuits.jpeg": "/GiftStore/static/media/biscuits.d4b56f62.jpeg",
+    "static/media/flowers.jpeg": "/GiftStore/static/media/flowers.d8b99629.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.853b09f8.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.322af626.chunk.js",
+    "static/css/main.048a49c6.chunk.css",
+    "static/js/main.e43defcc.chunk.js"
+  ]
+}
