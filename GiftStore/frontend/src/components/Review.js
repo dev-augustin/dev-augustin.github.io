@@ -40,7 +40,7 @@ onSubmit=(event) =>{
 postAPI = async (formData) =>{
     console.log(formData)
     try{
-            const response = await axios.post("/rosy_api/v1/form", formData
+            const response = await axios.post("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/form", formData
            
             );
             console.log(response.data);

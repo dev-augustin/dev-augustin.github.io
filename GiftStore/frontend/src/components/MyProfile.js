@@ -18,7 +18,8 @@ export default class MyProfile extends Component {
             fullName: '',
             phone: '', 
             email: '',
-            address:''
+            address:'',
+            finaltotal:[]
         }
       
     }
@@ -26,9 +27,33 @@ export default class MyProfile extends Component {
     async componentDidMount() {
  
         try{
-                const response = await axios.get("/rosy_api/v1/orders");
-                console.log(response.data);
-                this.setState({reserve: response.data, isLoading: false})
+                const response = await axios.get("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders");
+                // console.log(response.data[0].total);
+                // console.log(response.data);
+                // let temp=0;
+                // let finalPrice=[];
+                // for(let i=0; i<response.data.length;i++){
+                // {temp[i]= response.data[i].total;}
+                // finalPrice.push(temp)
+
+                // }
+                // console.log(finalPrice)
+                // this.setState({finaltotal: finalPrice});
+                this.setState({reserve: response.data});
+                            let temp=[];
+                let finalPrice=[];
+                for(let i=0; i<response.data.length;i++){
+                {temp[i]= response.data[i].total;}
+                finalPrice.push(temp[i])
+                console.log(finalPrice)
+
+                }
+                console.log(
+                    finalPrice.reduce((a, b) => a + b, 0)
+                  )
+
+                  let totalPay = ( finalPrice.reduce((a, b) => a + b, 0)).toFixed(2);
+                   this.setState({finaltotal:totalPay})
             }
     
         catch(e){
@@ -57,7 +82,7 @@ export default class MyProfile extends Component {
     postAPI = async (formData) =>{
         console.log(formData)
         try{
-                const response = await axios.post("/rosy_api/v1/customer", formData
+                const response = await axios.post("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/customer", formData
                
                 );
                 console.log(response.data);
@@ -110,6 +135,7 @@ export default class MyProfile extends Component {
                     </Table>   
             </div>
             <div className = "final-form-container">
+                <h3>Total amount due : $ {this.state.finaltotal}</h3>
             <h5 className="customer-header">Customer Infortmation</h5>
                 <form onSubmit={this.onSubmit} >
 

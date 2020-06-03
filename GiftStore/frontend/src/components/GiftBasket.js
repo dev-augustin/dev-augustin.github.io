@@ -30,7 +30,7 @@ export default class GiftBasket extends Component {
 
         try{
       
-            const response= await axios.get('https://api.rainforestapi.com/request', { params })
+            const response= await axios.get('https://cors-anywhere.herokuapp.com/https://api.rainforestapi.com/request', { params })
 
             //  let x = (this.state.price+ (Math.random()*2)).toFixed(2)
     

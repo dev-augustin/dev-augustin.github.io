@@ -22,7 +22,7 @@ export default class MyCart extends Component {
     async componentDidMount() {
  
         try{
-                const response = await axios.get("/rosy_api/v1/orders");
+                const response = await axios.get("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders");
                 console.log(response.data);
                 this.setState({reserve: response.data})
                 console.log(response.data[0].total)
@@ -36,7 +36,7 @@ export default class MyCart extends Component {
 deleteAPI = async (id) =>{
     console.log(id)
     try{
-            const response = await axios.delete(`/rosy_api/v1/orders/${id}` );
+            const response = await axios.delete(`https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders/${id}` );
             console.log("deleted")
             console.log(response.data);
             let update = this.state.reserve.filter(i => i.id !== id);

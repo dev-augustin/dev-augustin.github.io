@@ -21,7 +21,7 @@ export default class Flowers extends Component {
     async componentDidMount() {
  
         try{
-                const response = await axios.get("/rosy_api/v1/flowers");
+                const response = await axios.get("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/flowers");
                 console.log(response.data);
                 this.setState({reserve: response.data})
                 console.log(response.data[1].productId)

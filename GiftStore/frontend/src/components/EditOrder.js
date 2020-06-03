@@ -70,7 +70,7 @@ onSubmit=(event) =>{
 putAPI = async (formData) =>{
     console.log(formData)
     try{
-            const response = await axios.put("/rosy_api/v1/orders/"+this.props.match.params.id, formData
+            const response = await axios.put("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders/"+this.props.match.params.id, formData
            
             );
             console.log(response.data);
@@ -103,7 +103,7 @@ putAPI = async (formData) =>{
     putContinueAPI = async (formData) =>{
         console.log(formData)
         try{
-                const response = await axios.put("/rosy_api/v1/orders/"+this.props.match.params.id, formData
+                const response = await axios.put("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders/"+this.props.match.params.id, formData
                
                 );
                 console.log(response.data);

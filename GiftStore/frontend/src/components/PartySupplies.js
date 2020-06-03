@@ -20,7 +20,7 @@ export default class PartySupplies extends Component {
     async componentDidMount() {
  
         try{
-                const response = await axios.get("/rosy_api/v1/party");
+                const response = await axios.get("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/party");
                 console.log(response.data);
                 this.setState({reserve: response.data})
             }
