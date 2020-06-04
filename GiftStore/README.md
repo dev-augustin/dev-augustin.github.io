@@ -2,9 +2,9 @@
 
 
 ### Deployed Link
-Heroku : https://spring-react-gift-store.herokuapp.com/
-Github Pages : https://dev-augustin.github.io/giftstore-ghpages/
-Heroku Springboot: https://spring-gift-store.herokuapp.com/r
+1. Heroku : https://spring-react-gift-store.herokuapp.com/
+2. Github Pages : https://dev-augustin.github.io/giftstore-ghpages/
+3. Heroku Springboot: https://spring-gift-store.herokuapp.com/r
 
 ### Wireframe
 ![wireframe](https://github.com/dev-augustin/dev-augustin.github.io/blob/master/GiftStore/frontend/wireframe/GiftStore_Wireframe.png)
