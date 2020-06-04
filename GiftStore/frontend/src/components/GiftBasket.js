@@ -31,9 +31,6 @@ export default class GiftBasket extends Component {
         try{
       
             const response= await axios.get('https://cors-anywhere.herokuapp.com/https://api.rainforestapi.com/request', { params })
-
-            //  let x = (this.state.price+ (Math.random()*2)).toFixed(2)
-    
             this.setState({reserve: response.data.category_results})
 
         }
@@ -46,9 +43,6 @@ export default class GiftBasket extends Component {
 onSubmit=(event,image, title, price,productId ) =>{
 
     alert("Proceed to add quantity");
-    console.log(title, productId, image);
-    console.log(price)
-
     event.preventDefault();
     this.props.history.push({
                         pathname :'/view/', 
@@ -61,7 +55,6 @@ onSubmit=(event,image, title, price,productId ) =>{
 
 }
 render(){
-console.log("inside GiftBasket")
 
 return(
     <React.Fragment>
@@ -74,12 +67,8 @@ return(
 
                      <div className="poster-results"><ul key= {item.id} className="lists-display">
                      <li className="results-li"> <img src= {item.image}  alt="different Images" height = "300px" width="250px" /> 
-                     {/* <h5 id="item-title">{item.title.substring(0,30)} </h5>  */}
                      <h5 id="item-title">{this.state.title}</h5> 
                      <h5 id="item-price">${this.state.price+ (Math.random()*2).toFixed(2)}</h5>
-{/*              
-                     <h5 id="item-price">$ <div> {item.prices.map(val => <div>{val.value}</div>)}</div> */}
-                     {/* </h5>  */}
                      <button className="add-button" onClick={(e)=> {this.onSubmit(e, item.image, this.state.title, this.state.price+ (Math.random()*2).toFixed(2), item.asin, item.id)}}>Add</button>
                      </li>
 
