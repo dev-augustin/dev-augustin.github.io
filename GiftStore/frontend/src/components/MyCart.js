@@ -23,9 +23,9 @@ export default class MyCart extends Component {
  
         try{
                 const response = await axios.get("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders");
-                console.log(response.data);
+        
                 this.setState({reserve: response.data})
-                console.log(response.data[0].total)
+                
             }
     
         catch(e){
@@ -37,8 +37,6 @@ deleteAPI = async (id) =>{
     console.log(id)
     try{
             const response = await axios.delete(`https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders/${id}` );
-            console.log("deleted")
-            console.log(response.data);
             let update = this.state.reserve.filter(i => i.id !== id);
             this.setState({reserve: update})
 
@@ -49,8 +47,7 @@ deleteAPI = async (id) =>{
         }
     }
    render(){
-       console.log("in cart page")
-
+     
        return(
         <React.Fragment>
 
