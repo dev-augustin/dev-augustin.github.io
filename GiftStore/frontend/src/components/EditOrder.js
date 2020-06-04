@@ -26,7 +26,6 @@ export default class EditOrder extends Component {
  
     try{
             const response = await axios.get("/rosy_api/v1/orders/"+this.props.match.params.id)
-            console.log(response.data.price);
             this.setState({
             price: response.data.price,
             productId: response.data.productId,
@@ -45,8 +44,7 @@ export default class EditOrder extends Component {
 
 
 handleChange = (event) =>{
-    console.log("inside handleChange")
-    console.log(event.target.name, event.target.value)
+
      event.preventDefault();
      this.setState({[event.target.name] : event.target.value})
 }
@@ -54,7 +52,6 @@ handleChange = (event) =>{
 onSubmit=(event) =>{
     event.preventDefault();
     let y= (this.state.quantity*this.state.price).toFixed(2);
-    console.log(y)
     this.setState({total: y});
     let formData = {
         price: this.state.price,
@@ -68,12 +65,12 @@ onSubmit=(event) =>{
 }
 
 putAPI = async (formData) =>{
-    console.log(formData)
+  
     try{
             const response = await axios.put("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders/"+this.props.match.params.id, formData
            
             );
-            console.log(response.data);
+           
             this.props.history.push('/myCart');
         }
 
@@ -87,7 +84,6 @@ putAPI = async (formData) =>{
         alert("Quantity updated to cart. Continue shopping");
         event.preventDefault();
         let y= (this.state.quantity*this.state.price).toFixed(2);
-        console.log(y)
         this.setState({total: y});
         let formData = {
             price: this.state.price,
@@ -101,12 +97,12 @@ putAPI = async (formData) =>{
     }
     
     putContinueAPI = async (formData) =>{
-        console.log(formData)
+     
         try{
                 const response = await axios.put("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/orders/"+this.props.match.params.id, formData
                
                 );
-                console.log(response.data);
+              
                 this.props.history.push('/flowers/3.2');
             }
     
