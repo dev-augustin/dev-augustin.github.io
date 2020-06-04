@@ -22,10 +22,9 @@ export default class Flowers extends Component {
  
         try{
                 const response = await axios.get("https://cors-anywhere.herokuapp.com/https://spring-gift-store.herokuapp.com/rosy_api/v1/flowers");
-                console.log(response.data);
+           
                 this.setState({reserve: response.data})
-                console.log(response.data[1].productId)
-                console.log(response.data[1].price)
+               
             }
     
         catch(e){
@@ -36,9 +35,6 @@ export default class Flowers extends Component {
 onSubmit=(event,image, title, price, productId) =>{
   
     alert("Proceed to add quantity");
-
-    console.log(title, productId, image);
-    console.log(price)
 
     event.preventDefault();
     this.props.history.push({
